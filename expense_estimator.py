@@ -12,7 +12,7 @@ def expenses():
     misc = int(input("How much did you spend on other stuff? "))
     payment = int(input("How much is your recurring monthly payment? "))
 
-    gas_calculate = (gas_km/7.6)*30.4 #calculate gas cost based on km/L on a 18mpg car
+    gas_calculate = (gas_km/7.6)*30.4 # calculate gas cost based on km/L on a 18mpg car
                                       # 1 gallon = 3.8L, 1 mile = 1.6km
                                       # 1.6km = 3.8L, 1km = 2.375 L
                                       # set the car to 18 mile per gallon, which is 28.8 km per 3.8 Liter
