@@ -123,12 +123,12 @@ class calculate:
         gas_saving = ((gas / gas_mpg) * gas_prices * (upcoming_days * reduce_by_half)) + ((gas / gas_mpg) * gas_prices * past_days)
         misc_saving = misc_freq * misc
         all_save = food_saving + gas_saving + misc_saving + payment
-        no_save_gas = food_saving + misc_saving + payment
-        no_save_misc = food_saving + gas_saving + payment
-        no_save_food = gas_saving + misc_saving + payment
-        only_food = food_saving + payment
-        only_gas = gas_saving + payment
-        only_misc = misc_saving + payment
+        no_save_gas = food_saving + misc_saving + payment + gas_expense
+        no_save_misc = food_saving + gas_saving + payment + misc_expense
+        no_save_food = gas_saving + misc_saving + payment + food_expense
+        only_food = food_saving + payment + gas_expense + misc_expense
+        only_gas = gas_saving + payment + food_expense + misc_expense
+        only_misc = misc_saving + payment + food_expense + gas_expense
 
         # Input variables
         save_food = input("Can you reduce your food spending by 20 percent starting now? y / n ")
