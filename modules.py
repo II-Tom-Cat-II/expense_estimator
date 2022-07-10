@@ -94,20 +94,20 @@ class calculate:
     def estimate_expense():
 
         # Input variables
-        # food = int(input("How much did you spend on your most recent food/drink? "))
-        # gas = int(input("How far did you drive the last time you used your car? "))
-        # gas_mpg = int(input("What's your car's gas mileage? "))
-        # misc = int(input("How much did you spend on your last non-essential items? "))
-        # misc_freq = int(input("How many times did you spend money on non-essentials so far this month? "))
-        # payment = int(input("How much is your recurring payment this month? "))
+        food = int(input("How much did you spend on your most recent food/drink? "))
+        gas = int(input("How far did you drive the last time you used your car? "))
+        gas_mpg = int(input("What's your car's gas mileage? "))
+        misc = int(input("How much did you spend on your last non-essential items? "))
+        misc_freq = int(input("How many times did you spend money on non-essentials so far this month? "))
+        payment = int(input("How much is your recurring payment this month? "))
 
         # Test input variables, test the code without having to do input on every trial, comment it to switch to the real code.
-        food = 15
-        gas = 10
-        gas_mpg = 18
-        misc = 20
-        misc_freq = 4
-        payment = 1000
+#         food = 15
+#         gas = 10
+#         gas_mpg = 18
+#         misc = 20
+#         misc_freq = 4
+#         payment = 1000
 
         # Formulas
         food_expense = food * Time_Estimator.total_days
