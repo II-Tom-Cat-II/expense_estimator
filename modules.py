@@ -140,21 +140,21 @@ class calculate:
             condition = [save_food, save_gas, save_misc]
             
             if condition == ["y","y","y"]:
-                print("Your new estimated expense after saving is",all_save,"dollars! Good job!!")
+                print("Your new estimated expense after saving is",int(all_save),"dollars! Good job!!")
             elif condition == ["n","n","n"]:
                 print("You didn't save anything!!")
             elif condition == ["y","y","n"]:
-                print("Your new estimated expense after saving is",no_save_misc,"dollars!")
+                print("Your new estimated expense after saving is",int(no_save_misc),"dollars!")
             elif condition == ["y","n","y"]:
-                print("Your new estimated expense after saving is",no_save_gas,"dollars!")
+                print("Your new estimated expense after saving is",int(no_save_gas),"dollars!")
             elif condition == ["n","y","y"]:
-                print("Your new estimated expense after saving is",no_save_food,"dollars")
+                print("Your new estimated expense after saving is",int(no_save_food),"dollars")
             elif condition == ["y","n","n"]:
-                print("Your new estimated expense after saving is",only_food,"dollars!")
+                print("Your new estimated expense after saving is",int(only_food),"dollars!")
             elif condition == ["n","y","n"]:
-                print("Your new estimated expense after saving is",only_gas,"dollars!")
+                print("Your new estimated expense after saving is",int(only_gas),"dollars!")
             elif condition == ["n","n","y"]:
-                print("Your new estimated expense after saving is",only_misc,"dollars!")
+                print("Your new estimated expense after saving is",int(only_misc),"dollars!")
             else:
                 print("Incorrect input!!!")
 
